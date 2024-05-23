@@ -1,0 +1,38 @@
+header {
+  margin-top: 40px;
+}
+canvas {
+  height: 300px;
+  width: auto;
+  margin-inline: auto;
+}
+
+::backdrop {
+  background-color: #000;
+  opacity: 0.5;
+}
+
+dialog {
+  border: none;
+  border-radius: 16px;
+  margin-top: 60px;
+  margin-inline: auto;
+  width: 400px;
+  /* margin: auto; */
+}
+
+/* dialog header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em 1.5em;
+  border-bottom: 1px solid #aaa;
+} */
+
+dialog main {
+  padding: 1em 1.5em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}

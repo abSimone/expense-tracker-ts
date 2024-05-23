@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web project</title>
+    <link
+      rel="stylesheet"
+      href="node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body>
+    <main>
+      <header>
+        <canvas id="chart"></canvas>
+      </header>
+      <section class="mt-5 d-flex justify-content-center">
+        <button id="showform" class="btn btn-primary" data-id="showModal">
+          Add expense
+        </button>
+      </section>
+
+      <dialog class="">
+        <header class="p-3 m-0 border-bottom">
+          <h4>Expense form</h4>
+        </header>
+        <section class="p-3">
+          <form method="dialog">
+            <div>
+              <label for="title">Title</label>
+              <input type="text" id="title" name="title" class="form-control" />
+            </div>
+            <div class="mt-3">
+              <label for="amount">Amount</label
+              ><input
+                type="text"
+                id="amount"
+                name="amount"
+                class="form-control"
+              />
+            </div>
+            <div class="mt-3">
+              <label for="date">Due date</label
+              ><input type="date" id="date" name="date" class="form-control" />
+            </div>
+            <div class="mt-3">
+              <label for="category">Select a category</label>
+              <select name="category" id="category" class="form-control">
+                <option value="-1" selected disabled>Select a category</option>
+              </select>
+            </div>
+
+            <div class="mt-3 text-center">
+              <button type="submit" class="btn btn-success">Add</button>
+            </div>
+          </form>
+        </section>
+      </dialog>
+    </main>
+
+    <!-- <div class="container">
+      <h1 class="mt-5">Welcome to My Web Project</h1>
+      <p class="lead">
+        This is a simple project setup using HTML, CSS, TypeScript, and
+        Bootstrap.
+      </p>
+      <button id="openModalBtn" class="btn btn-primary">Open Modal</button>
+      <button class="btn btn-info" name="simple-dialog">Show the dialog</button>
+    </div>
+
+      Modal structure
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">This is a Bootstrap modal.</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <dialog>
+      <header>
+        <h3>Simple dialog window</h3>
+        <button autofocus>Close</button>
+      </header>
+
+      <main>
+        <p>This modal dialog has a groovy backdrop!</p>
+      </main>
+    </dialog> -->
+
+    <script src="bundle.js"></script>
+  </body>
+</html>
